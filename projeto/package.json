@@ -7,7 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "ControleEstoque": "node ./app.js"
   },
-  "author": "GiuZambot",
+  "keywords": [
+    "Node.Js",
+    "controle",
+    "estoque",
+    "CRUD",
+    "JavaScript"
+  ],
+  "author": "Valéria Cabral",
   "license": "MIT",
   "dependencies": {
     "readline-sync": "^1.4.10"
