@@ -18,29 +18,27 @@ const alterarPorId = () => {
   console.table(itemBuscado);
 
   const alterarPorId = () => {
-    console.log("Para alterar o produto, siga as instruções");
-    const novoNome = readline.question(`Digite o novo nome: `);
-    const novoPreco = readline.question(`Digite o novo preco: `);
-    const novaQuantidade = readline.question(`Digite a nova quantidade: `);
-    const novaMarca = readline.question(`Digite a nova marca: `);
-    const novoFornecedor = readline.question(`Digite o novo fornecedor: `);
+    console.log("Vamos lá alterar as informações!");
+    const novoNome = readline.question(`Digite o novo nome do produto: `);
+    const novoPreco = readline.question(`Digite o novo preco do produto: `);
+    const novaQuantidade = readline.question(`Digite a nova quantidade do produto: `);
+    const novaMarca = readline.question(`Digite a nova marca do produto: `);
 
     const produtoAlterado = {
       id: +idSelecionado,
       nome: novoNome,
       preco: +novoPreco,
       quantidade: +novaQuantidade,
-      marca: novaMarca,
-      fornecedor: novoFornecedor
+      marca: novaMarca
       }
-    console.log("Confira suas alterações: "); 
+    console.log("Aqui estão as alterações feitas por você: "); 
     console.table(produtoAlterado);
 
     database.splice(produtoEncontrado, 1, produtoAlterado);
   }
   alterarPorId();
   
-  console.log("Dê enter para voltar");
+  console.log("Caso deseje voltar, pressione ENTER");
   readline.question();
   console.clear();
 }

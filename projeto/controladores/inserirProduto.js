@@ -6,16 +6,16 @@ const { database } = require("../database");
 let incrementalId = 8;
 incrementalId++;
 const inserirProduto = () => {
-  console.log("Para cadastrar um novo produto, siga as instruções");
+  console.log("Cadastro de novos produtos:");
   const cadastrarProduto = () => {
     const id = incrementalId;
     const nome = readline.question(`Nome: `);
     const preco = readline.question(`Preco: `);
     const quantidade = readline.question(`Quantidade: `);
     const marca = readline.question(`Marca: `);
-    const fornecedor = readline.question(`Fornecedor: `);
     
-    const novoProduto = {id, nome, preco: +preco, quantidade: +quantidade, marca, fornecedor};
+    
+    const novoProduto = {id, nome, preco: +preco, quantidade: +quantidade, marca};
 
     database.push(novoProduto);
     console.table(novoProduto);

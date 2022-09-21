@@ -8,16 +8,16 @@ const { listarTudo } = require("./controladores/listarTudo");
 const readline = require("readline-sync");
 
 const inicial = () => {
-  console.log(`====================== Menu ========================
-  1 - Listar todos os produtos
-  2 - Ver detalhes de um produto por Id
-  3 - Cadastrar novo produto
-  4 - Alterar um produto por Id
-  5 - Aplicar aumento a todos os preços
-  6 - Excluir um produto por Id
-  7 - Outras opções
+  console.log(`=====BEM-VINDX AO MEU CRUD=======
+  1 - LISTAR OS PRODUTOS
+  2 - VER DETALHES DE UM PRODUTO POR ID
+  3 - CADASTRAR NOVO PRODUTO
+  4 - ALTERAR UM PRODUTO POR ID
+  5 - APLICAR AUMENTO A TODOS OS PREÇOS
+  6 - EXCLUIR UM PRODUTO POR ID
+  7 - OUTRAS OPÇÕES
   8 - SAIR
-  Digite de 1 até 7 para escolher uma opção:
+  DIGITE DE 1 ATÉ 7 PARA ESCOLHER UMA OPÇÃO:
   `);
   const resposta = readline.question();
 
@@ -55,16 +55,16 @@ const inicial = () => {
       break;
 
     case "7":
-      console.log("Não há (opcional extra, compre o plus)");
+      console.log("-------");
       inicial();
       break;
 
     case "8":
-      console.log("Obrigada, volte sempre!");
+      console.log("Adeuss!");
       break;
 
     default:
-      console.log(`Opção ${resposta} não reconhecida tente novamente`);
+      console.log(`A opção ${resposta} não existe. Digite novamente`);
       inicial();
       break;
   }

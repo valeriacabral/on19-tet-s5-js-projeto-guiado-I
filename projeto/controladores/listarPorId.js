@@ -5,12 +5,12 @@ const readline = require("readline-sync");
 const { database } = require("../database");
 
 const listarPorId = () => {
-  console.log("Qual produto deseja ver detalhes?");
+  console.log("QUAL PRODUTO DESEJA DETALHAR?");
   const produtoIdSelecionado = readline.question();
   console.log("Produto id selecionado: " + produtoIdSelecionado);
   const detalhesIdSelecionado = database.find(item => item.id == produtoIdSelecionado);
   console.table(detalhesIdSelecionado);
-  console.log("Dê enter para voltar");
+  console.log("DÊ ENTER PARA VOLTAR AO MENU");
   readline.question();
   console.clear();
 }

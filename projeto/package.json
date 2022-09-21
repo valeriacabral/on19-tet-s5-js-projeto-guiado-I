@@ -8,11 +8,7 @@
     "ControleEstoque": "node ./app.js"
   },
   "keywords": [
-    "Node.Js",
-    "controle",
-    "estoque",
-    "CRUD",
-    "JavaScript"
+    "CRUD"
   ],
   "author": "Valéria Cabral",
   "license": "MIT",
